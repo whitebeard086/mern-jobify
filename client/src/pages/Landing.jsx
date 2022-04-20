@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import main from "../assets/images/main-alternative.svg";
 import Wrapper from "../assets/wrappers/LandingPage";
 import { Logo } from "../components";
@@ -20,7 +21,9 @@ const Landing = () => {
             post-ironic coloring book chillwave farm-to-table. Truffaut stumptown 3 wolf moon banh
             mi yuccie hashtag farm-to-table ethical kale chips.
           </p>
-          <button className="btn btn-hero">Login/Register</button>
+          <button className="btn btn-hero">
+            <Link to="/register">Login/Register</Link>
+          </button>
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
