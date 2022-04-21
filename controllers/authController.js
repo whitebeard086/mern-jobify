@@ -55,6 +55,7 @@ const login = async (req, res) => {
 
 const updateUser = async (req, res) => {
   res.send("update user");
+  console.log(req.user);
 };
 
 export { register, login, updateUser };
