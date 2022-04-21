@@ -21,9 +21,9 @@ const Landing = () => {
             post-ironic coloring book chillwave farm-to-table. Truffaut stumptown 3 wolf moon banh
             mi yuccie hashtag farm-to-table ethical kale chips.
           </p>
-          <button className="btn btn-hero">
-            <Link to="/register">Login/Register</Link>
-          </button>
+          <Link to="/register" className="btn btn-hero">
+            Login/Register
+          </Link>
         </div>
         <img src={main} alt="job hunt" className="img main-img" />
       </div>
