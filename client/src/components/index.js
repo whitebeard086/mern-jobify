@@ -1,4 +1,6 @@
 export { default as Alert } from "./Alert";
+export { default as AreaCharts } from "./AreaChart";
+export { default as BarCharts } from "./BarChart";
 export { default as BigSidebar } from "./BigSidebar";
 export { default as ChartsContainer } from "./ChartsContainer";
 export { default as FormRow } from "./FormRow";
