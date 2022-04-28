@@ -9,7 +9,6 @@ const PageBtnContainer = () => {
   const pages = Array.from({ length: numOfPages }, (_, index) => {
     return index + 1;
   });
-  console.log(pages);
 
   const nextPage = () => {
     let newPage = page + 1

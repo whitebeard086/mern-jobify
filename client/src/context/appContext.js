@@ -93,8 +93,6 @@ const AppProvider = ({ children }) => {
       return response;
     },
     error => {
-      // console.log(error.response);
-
       if (error.response.status === 401) {
         logoutUser();
       }
@@ -258,7 +256,6 @@ const AppProvider = ({ children }) => {
       await authFetch.delete(`/jobs/${jobId}`);
       getJobs();
     } catch (error) {
-      console.log(error.response);
       logoutUser();
     }
   };
@@ -277,7 +274,6 @@ const AppProvider = ({ children }) => {
         },
       });
     } catch (error) {
-      console.log(error.response);
       logoutUser();
     }
     clearALert();
@@ -287,7 +283,7 @@ const AppProvider = ({ children }) => {
     dispatch({ type: CLEAR_FILTERS });
   };
 
-  const changePage = (page) => {
+  const changePage = page => {
     dispatch({ type: CHANGE_PAGE, payload: { page } });
   };
 
